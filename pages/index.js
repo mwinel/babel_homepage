@@ -1,3 +1,10 @@
+import Layout from '../components/Layouts/Layout';
+import ContentPanel from '../components/ContentPanel/ContentPanel';
+
 export default function Home() {
-    return <h1 className="text-4xl font-extrabold">Babel</h1>;
+    return (
+        <Layout>
+            <ContentPanel>Hello there!</ContentPanel>
+        </Layout>
+    );
 }
