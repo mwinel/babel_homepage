@@ -56,7 +56,7 @@ export default function Home() {
                             Everyone is invited.
                         </h1>
                         <h1 className="text-display-md font-extrabold tracking-tight text-center text-transparent bg-clip-text bg-gradient-to-r from-gradient via-gradient-2 to-gradient-3">
-                            Everyones's identity is protected.
+                            Everyone&apos;s identity is protected.
                         </h1>
                         <p className="text-center text-lg my-6 text-neutral-700 w-7/12 mx-auto">
                             BABEL is designed for minorities, refugees, and
