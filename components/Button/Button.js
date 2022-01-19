@@ -2,8 +2,7 @@ import classNames from '../../utils/classnames';
 
 export default function Button({
     variant,
-    alignText,
-    rounded,
+    size,
     children,
     className,
     onClick,
@@ -14,15 +13,16 @@ export default function Button({
     return (
         <button
             className={classNames(
-                `inline-flex px-4 py-2 text-sm font-medium text-white`,
-                `border border-transparent shadow-sm`,
-                variant === 'primary' && `bg-blue-600 hover:bg-blue-700`,
-                variant === 'secondary' && `bg-gray-600 hover:bg-gray-700`,
-                variant === 'success' && `bg-green-600 hover:bg-green-700`,
-                alignText === 'left' && `text-left`,
-                alignText === 'center' && `text-center`,
-                rounded === 'full' && `rounded-md`,
-                rounded === 'top' && `rounded-t-md`,
+                `inline-flex px-6 items-center justify-center rounded-[8px] text-center font-bold tracking-wide transition ease-out duration-200`,
+                variant === 'primary' &&
+                    `text-neutral bg-gradient-to-r from-gradient via-gradient-2 to-gradient-3 opacity-[80%] hover:opacity-[100%]`,
+                variant === 'secondary' &&
+                    `text-primary-500 bg-neutral shadow-button-2xl hover:bg-primary-400 hover:text-neutral`,
+                variant === 'outline' &&
+                    `text-neutral-800 bg-transparent border-2 border-neutral-200 hover:border-primary-400`,
+                size === 'lg' && `h-[60px] text-buttons-lg`,
+                size === 'md' && `h-[50px] text-buttons-md`,
+                size === 'sm' && `h-[40px] text-buttons-sm`,
                 className
             )}
             type={type}

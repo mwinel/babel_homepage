@@ -13,7 +13,8 @@ module.exports = {
             'label-md': ['22px', '30px'],
             'label-sm': ['16px', '20px'],
             'buttons-lg': ['20px', '24px'],
-            'buttons-sm': ['18px', '20px'],
+            'buttons-md': ['18px', '20px'],
+            'buttons-sm': ['16px', '18px'],
             lg: ['20px', '30px'],
             md: ['18px', '26px'],
             sm: ['16px', '24px'],
@@ -42,10 +43,18 @@ module.exports = {
             'primary-600': '#245978',
             'primary-700': '#183850',
             'primary-800': '#0E2230',
+            gradient: '#48C6EF',
+            'gradient-2': '#539DDA',
+            'gradient-3': '#6F86D6',
+            shadow: '#68C3FA',
         },
         extend: {
             fontFamily: {
                 urbanist: ['Urbanist', 'sans-serif'],
+            },
+            boxShadow: {
+                'button-2xl': '0px 14px 40px -8px #68C3FA'
+                
             },
         },
     },
