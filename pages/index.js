@@ -107,7 +107,7 @@ export default function Home() {
                                 Get in touch with us
                             </h1>
                             <p className="text-lg my-2 text-neutral-700 pr-20">
-                                Don’t hesitate to reach out to us, our team is
+                                Don't hesitate to reach out to us, our team is
                                 happy to answer any questions that you may have.
                             </p>
                             {/* Form */}
