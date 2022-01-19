@@ -6,6 +6,19 @@ module.exports = {
         './components/**/*.{js,ts,jsx,tsx}',
     ],
     theme: {
+        fontSize: {
+            'display-lg': ['80px', '80px'],
+            'display-md': ['56px', '60px'],
+            'display-sm': ['36px', '40px'],
+            'label-md': ['22px', '30px'],
+            'label-sm': ['16px', '20px'],
+            'buttons-lg': ['20px', '24px'],
+            'buttons-sm': ['18px', '20px'],
+            lg: ['20px', '30px'],
+            md: ['18px', '26px'],
+            sm: ['16px', '24px'],
+            xs: ['14px', '18px'],
+        },
         colors: {
             transparent: 'transparent',
             current: 'currentColor',

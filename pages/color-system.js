@@ -1,4 +1,4 @@
-export default function Home() {
+export default function Colors() {
     return (
         <div className="mx-auto my-10 max-w-7xl">
             <h1 className="text-4xl font-extrabold text-primary-800">
