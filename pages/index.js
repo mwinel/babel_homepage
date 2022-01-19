@@ -61,7 +61,7 @@ export default function Home() {
                         <p className="text-center text-lg my-6 text-neutral-700 w-7/12 mx-auto">
                             BABEL is designed for minorities, refugees, and
                             communities. We do not discriminate against anyone
-                            who participates in the discussions. Everyone's
+                            who participates in the discussions. Everyone&apos;s
                             opinions are anonymous and cannot be traced back to
                             you IRL.
                         </p>
@@ -107,7 +107,7 @@ export default function Home() {
                                 Get in touch with us
                             </h1>
                             <p className="text-lg my-2 text-neutral-700 pr-20">
-                                Don't hesitate to reach out to us, our team is
+                                Don&apos;t hesitate to reach out to us, our team is
                                 happy to answer any questions that you may have.
                             </p>
                             {/* Form */}
