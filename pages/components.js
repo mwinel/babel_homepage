@@ -8,39 +8,41 @@ export default function Components() {
             <div>Components</div>
             <div className="mt-4">
                 <div className="flex space-x-2">
-                    <Button variant="primary" size="lg">
-                        Primary large
-                    </Button>
-                    <Button variant="secondary" size="lg">
-                        Secondary large
-                    </Button>
-                    <Button variant="outline" size="lg">
-                        Outline large
-                    </Button>
+                    <Button variant="primary" size="lg" title="Primary Large" />
+                    <Button
+                        variant="secondary"
+                        size="lg"
+                        title="Secondary Large"
+                    />
+                    <Button variant="outline" size="lg" title="Outline Large" />
                 </div>
 
                 <div className="flex mt-4 space-x-2">
-                    <Button variant="primary" size="md">
-                        Primary medium
-                    </Button>
-                    <Button variant="secondary" size="md">
-                        Secondary medium
-                    </Button>
-                    <Button variant="outline" size="md">
-                        Outline medium
-                    </Button>
+                    <Button
+                        variant="primary"
+                        size="md"
+                        title="Primary Medium"
+                    />
+                    <Button
+                        variant="secondary"
+                        size="md"
+                        title="Secondary Medium"
+                    />
+                    <Button
+                        variant="outline"
+                        size="md"
+                        title="Outline Medium"
+                    />
                 </div>
 
                 <div className="flex mt-4 space-x-2">
-                    <Button variant="primary" size="sm">
-                        Primary small
-                    </Button>
-                    <Button variant="secondary" size="sm">
-                        Secondary small
-                    </Button>
-                    <Button variant="outline" size="sm">
-                        Outline small
-                    </Button>
+                    <Button variant="primary" size="sm" title="Primary Small" />
+                    <Button
+                        variant="secondary"
+                        size="sm"
+                        title="Secondary Small"
+                    />
+                    <Button variant="outline" size="sm" title="Outline Small" />
                 </div>
 
                 <div className="flex mt-4 space-x-2">

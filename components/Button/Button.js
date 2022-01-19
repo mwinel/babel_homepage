@@ -3,7 +3,7 @@ import classNames from '../../utils/classnames';
 export default function Button({
     variant,
     size,
-    children,
+    title,
     className,
     onClick,
     type,
@@ -13,7 +13,7 @@ export default function Button({
     return (
         <button
             className={classNames(
-                `inline-flex px-6 items-center justify-center rounded-[8px] text-center font-bold tracking-wide transition ease-out duration-200`,
+                `inline-flex px-6 items-center justify-center rounded-[8px] text-center font-bold tracking-wide transition ease-out duration-300`,
                 variant === 'primary' &&
                     `text-neutral bg-gradient-to-r from-gradient via-gradient-2 to-gradient-3 opacity-[80%] hover:opacity-[100%]`,
                 variant === 'secondary' &&
@@ -30,7 +30,7 @@ export default function Button({
             onClick={onClick}
             {...rest}
         >
-            {children}
+            {title}
         </button>
     );
 }
