@@ -1,4 +1,5 @@
 const { fontFamily } = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
 
 module.exports = {
     content: [
@@ -47,14 +48,14 @@ module.exports = {
             'gradient-2': '#539DDA',
             'gradient-3': '#6F86D6',
             shadow: '#68C3FA',
+            red: colors.red,
         },
         extend: {
             fontFamily: {
                 urbanist: ['Urbanist', 'sans-serif'],
             },
             boxShadow: {
-                'button-2xl': '0px 14px 40px -8px #68C3FA'
-                
+                'button-2xl': '0px 14px 40px -8px #68C3FA',
             },
         },
     },
