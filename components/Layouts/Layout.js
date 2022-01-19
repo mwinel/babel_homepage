@@ -8,9 +8,9 @@ export default function Layout({
 }) {
     return (
         <div>
-            <Nav />
+            {showNavbar && <Nav />}
             <main>{children}</main>
-            <Footer />
+            {showFooter && <Footer />}
         </div>
     );
 }
