@@ -4,12 +4,16 @@ import Button from '../Button/Button';
 
 export default function GetInTouchForm() {
     return (
-        <form className="flex flex-col mt-6">
+        <form className="mt-6">
             <div className="flex space-x-4">
-                <TextInput id="name" name="name" placeholder="Name*" />
-                <TextInput id="email" name="email" placeholder="Email*" />
+                <div className="w-1/2">
+                    <TextInput id="name" name="name" placeholder="Name*" />
+                </div>
+                <div className="w-1/2">
+                    <TextInput id="email" name="email" placeholder="Email*" />
+                </div>
             </div>
-            <div className="mt-2 mr-6">
+            <div className="mt-2">
                 <TextArea id="message" name="message" placeholder="Message*" />
             </div>
             <div className="inline-flex mt-3">
@@ -17,11 +21,11 @@ export default function GetInTouchForm() {
                     variant="primary"
                     size="md"
                     title="Send message"
-                    className="w-[260px] mr-4"
+                    className="w-[260px] mr-6"
                 />
-                <p className="text-sm text-neutral-700 pr-20">
-                    By submitting this form, you agree to our{' '}
-                    <a className="text-neutral-800 font-medium cursor-pointer hover:underline hover:text-neutral-700">
+                <p className="pr-20 text-sm text-neutral-700">
+                    By submitting this form, you agree to our <br />
+                    <a className="font-medium cursor-pointer text-neutral-800 hover:underline hover:text-neutral-700">
                         terms and conditions
                     </a>
                     .

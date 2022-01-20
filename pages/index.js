@@ -247,7 +247,7 @@ export default function Home() {
                 {/* Get in touch section */}
                 <ContentPanel>
                     <div className="flex items-center justify-between py-20">
-                        <div className="w-6/12">
+                        <div className="w-7/12">
                             <h1 className="font-extrabold tracking-tight text-display-md">
                                 Get in touch with us
                             </h1>
@@ -259,7 +259,13 @@ export default function Home() {
                             {/* Form */}
                             <GetInTouch />
                         </div>
-                        <div className="w-6/12">Image</div>
+                        <div className="flex justify-end w-5/12">
+                            <img
+                                src="/images/contact.png"
+                                alt="lock"
+                                className="w-[413px] h-[417px]"
+                            />
+                        </div>
                     </div>
                 </ContentPanel>
             </div>
