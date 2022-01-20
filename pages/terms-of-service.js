@@ -29,7 +29,7 @@ export default function NotFound() {
                     <br />
                     Example bullet points:
                     <br />
-                    <ul className="list-inside">
+                    <ul className="list-disc list-inside">
                         <li>Point number 1</li>
                         <li>Point number 2</li>
                         <li>Point number 3</li>
