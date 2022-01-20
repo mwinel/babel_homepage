@@ -7,46 +7,71 @@ import GetInTouch from '../components/GetInTouchForm/GetInTouchForm';
 export default function Home() {
     return (
         <Layout showNavbar={false}>
-            <div className="">
-                <div className="h-[115px] flex items-center justify-center">
-                    <Logo />
-                </div>
+            <div>
                 {/* Hero Section */}
-                <div className="h-[785px]">
-                    <h1 className="text-display-lg font-extrabold tracking-tight text-center text-transparent">
-                        <span className="bg-clip-text bg-gradient-to-r from-gradient to-gradient-2">
-                            Privacy
-                        </span>{' '}
-                        <span className="bg-clip-text bg-gradient-to-r from-gradient-2 to-gradient-3">
-                            First
-                        </span>
-                    </h1>
+                <div
+                    className="bg-bottom bg-no-repeat bg-cover h-[915px] top-0 left-0"
+                    style={{
+                        backgroundImage: `url("/images/group.png")`,
+                    }}
+                >
+                    <div className="h-[115px] flex items-center justify-center">
+                        <Logo />
+                    </div>
+                    <div className="h-full">
+                        <div className="mt-0">
+                            <div className="flex -space-x-8 justify-center items-center">
+                                <h1 className="text-display-lg font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gradient to-gradient-2">
+                                    Privacy
+                                </h1>
+                                <div className="w-40 h-40 flex items-center justify-center relative">
+                                    <img
+                                        src="/images/glow_hero.png"
+                                        className="w-40 h-40"
+                                    />
+                                    <div className="w-32 h-32 z-20 absolute">
+                                        <img
+                                            src="/images/shield_hero.png"
+                                            className="w-32 h-32"
+                                        />
+                                    </div>
+                                </div>
+                                <h1 className="text-display-lg font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gradient-2 to-gradient-3">
+                                    First
+                                </h1>
+                            </div>
+                            <h1 className="text-display-lg font-extrabold tracking-tight text-center -mt-10">
+                                Discussion Platform
+                            </h1>
+                            <p className="text-lg text-center mt-4 text-primary-600">
+                                A safe space to share your views on issues that
+                                affect your life
+                            </p>
+                            <div className="flex justify-center items-center space-x-4 mt-6">
+                                <Button
+                                    variant="primary"
+                                    size="md"
+                                    title="Register now"
+                                    className="w-[190px]"
+                                />
+                                <Button
+                                    variant="secondary"
+                                    size="md"
+                                    title="Log in"
+                                    className="w-[190px]"
+                                />
+                            </div>
 
-                    <h1 className="text-display-lg font-extrabold tracking-tight text-center">
-                        Discussion Platform
-                    </h1>
-
-                    <p className="text-lg text-center my-4 text-primary-600">
-                        A safe space to share your views on issues that affect
-                        your life
-                    </p>
-
-                    <div className="flex justify-center items-center space-x-4">
-                        <Button
-                            variant="primary"
-                            size="md"
-                            title="Register Now"
-                            className="w-[190px]"
-                        />
-                        <Button
-                            variant="secondary"
-                            size="md"
-                            title="Log in"
-                            className="w-[190px]"
-                        />
+                            <div className="w-[896px] mx-auto flex items-center justify-center ">
+                                <img
+                                    src="/images/hero_masked.png"
+                                    className="w-auto absolute -mt-[67px]"
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
-
+                {/* Benefits section */}
                 <div className="bg-neutral-50 py-20">
                     <ContentPanel>
                         <p className="uppercase tracking-wide text-primary-500 text-center">
@@ -98,7 +123,6 @@ export default function Home() {
                         </div>
                     </ContentPanel>
                 </div>
-
                 {/* Get in touch section */}
                 <ContentPanel>
                     <div className="py-20 flex justify-between items-center">
@@ -107,8 +131,9 @@ export default function Home() {
                                 Get in touch with us
                             </h1>
                             <p className="text-lg my-2 text-neutral-700 pr-20">
-                                Don&apos;t hesitate to reach out to us, our team is
-                                happy to answer any questions that you may have.
+                                Don&apos;t hesitate to reach out to us, our team
+                                is happy to answer any questions that you may
+                                have.
                             </p>
                             {/* Form */}
                             <GetInTouch />
