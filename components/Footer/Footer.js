@@ -4,6 +4,8 @@ import Divider from '../Divider/Divider';
 import FooterLink from '../FooterLink/FooterLink';
 import SocialIcon from '../SocialIcon/SocialIcon';
 
+const currentYear = new Date().getFullYear();
+
 export default function Footer() {
     return (
         <div className="py-20">
@@ -37,7 +39,7 @@ export default function Footer() {
                 {/* Copyright text */}
                 <div className="flex items-center justify-center">
                     <p className="text-neutral-600 font-medium tracking-wide">
-                        Copyright @ BABEL 2022
+                        Copyright @ BABEL {currentYear}
                     </p>
                 </div>
             </ContentPanel>
