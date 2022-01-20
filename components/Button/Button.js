@@ -15,7 +15,7 @@ export default function Button({
             className={classNames(
                 `inline-flex px-6 items-center justify-center rounded-[8px] text-center font-bold tracking-wide transition ease-out duration-300`,
                 variant === 'primary' &&
-                    `text-neutral bg-gradient-to-r from-gradient via-gradient-2 to-gradient-3 opacity-[80%] hover:opacity-[100%]`,
+                    `text-neutral bg-gradient-to-r from-gradient via-gradient-2 to-gradient-3`,
                 variant === 'secondary' &&
                     `text-primary-500 bg-neutral shadow-button-2xl hover:bg-primary-400 hover:text-neutral`,
                 variant === 'outline' &&

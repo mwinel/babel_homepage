@@ -204,6 +204,46 @@ export default function Home() {
                         </div>
                     </ContentPanel>
                 </div>
+                {/* CTA Section */}
+                <div className="py-32">
+                    <ContentPanel>
+                        <div
+                            className="bg-no-repeat bg-center bg-cover h-[520px] flex items-center pt-10"
+                            style={{
+                                backgroundImage: `url("/images/cta_bg.png")`,
+                            }}
+                        >
+                            <div className="flex items-center p-20">
+                                <div className="w-[400px]">
+                                    <h1 className="font-extrabold tracking-tight text-transparent text-display-md bg-clip-text bg-gradient-to-r from-neutral via-neutral-200 to-neutral-400">
+                                        Are you ready
+                                    </h1>
+                                    <h1 className="font-extrabold tracking-tight text-transparent text-display-md bg-clip-text bg-gradient-to-r from-gradient via-gradient-2 to-gradient-3">
+                                        to join BABEL?
+                                    </h1>
+                                    <p className="my-6 text-md text-neutral">
+                                        Time to take back control of your
+                                        personal data.
+                                    </p>
+                                    <div className="flex items-center mt-6 space-x-4">
+                                        <Button
+                                            variant="primary"
+                                            size="md"
+                                            title="Register now"
+                                            className="w-[180px]"
+                                        />
+                                        <Button
+                                            variant="secondary"
+                                            size="md"
+                                            title="Log in"
+                                            className="w-[180px]"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ContentPanel>
+                </div>
                 {/* Get in touch section */}
                 <ContentPanel>
                     <div className="flex items-center justify-between py-20">
