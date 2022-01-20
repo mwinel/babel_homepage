@@ -116,7 +116,7 @@ export default function Home() {
                                         WHY BABEL
                                     </p>
                                     <div className="mt-6 font-extrabold tracking-tight text-display-md">
-                                        Today's social media raises{' '}
+                                        Today&apos;s social media raises{' '}
                                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-gradient via-gradient-2 to-gradient-3">
                                             concerns about users&apos; privacy
                                         </span>
