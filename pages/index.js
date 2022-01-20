@@ -140,8 +140,8 @@ export default function Home() {
                         </div>
                     </ContentPanel>
                 </div>
-                {/* Benefits section */}
-                <div className="py-20 bg-neutral-50">
+                {/* Benefits Section */}
+                <div className="py-32 bg-neutral-50">
                     <ContentPanel>
                         <p className="tracking-wide text-center uppercase text-primary-500">
                             INCLUSION AND PRIVACY MATTERS
@@ -159,8 +159,12 @@ export default function Home() {
                             opinions are anonymous and cannot be traced back to
                             you IRL.
                         </p>
-                        <div className="flex mt-20 space-x-8">
+                        <div className="flex mt-32 space-x-8">
                             <div className="w-4/12 bg-neutral p-10 rounded-[8px] shadow-xl">
+                                <img
+                                    src="/images/shield_wrapper.png"
+                                    className="w-[200px] h-[216px] mx-auto -mt-28 mr-16"
+                                />
                                 <p className="px-10 font-bold text-center text-label-md text-neutral-700">
                                     Blockchain-Based Authentication
                                 </p>
@@ -171,6 +175,10 @@ export default function Home() {
                                 </p>
                             </div>
                             <div className="w-4/12 bg-neutral p-10 rounded-[8px] shadow-xl">
+                                <img
+                                    src="/images/discussion_wrapper.png"
+                                    className="w-[236px] h-[216px] mx-auto -mt-28 mr-12"
+                                />
                                 <p className="px-10 font-bold text-center text-label-md text-neutral-700">
                                     Verified Discussion Forum
                                 </p>
@@ -181,6 +189,10 @@ export default function Home() {
                                 </p>
                             </div>
                             <div className="w-4/12 bg-neutral p-10 rounded-[8px] shadow-xl">
+                                <img
+                                    src="/images/privacy_wrapper.png"
+                                    className="w-[200px] h-[216px] mx-auto -mt-28 mr-16"
+                                />
                                 <p className="px-10 font-bold text-center text-label-md text-neutral-700">
                                     User Anonymity and Security
                                 </p>
