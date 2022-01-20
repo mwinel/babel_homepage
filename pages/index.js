@@ -106,6 +106,40 @@ export default function Home() {
                         </div>
                     </ContentPanel>
                 </div>
+                {/* Why BABEL Section */}
+                <div className="py-32">
+                    <ContentPanel>
+                        <div className="flex items-center justify-center space-x-2">
+                            <div className="flex w-6/12">
+                                <div className="flex flex-col">
+                                    <p className="font-bold uppercase text-label-sm text-primary-500">
+                                        WHY BABEL
+                                    </p>
+                                    <div className="mt-6 font-extrabold tracking-tight text-display-md">
+                                        Today's social media raises{' '}
+                                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-gradient via-gradient-2 to-gradient-3">
+                                            concerns about users&apos; privacy
+                                        </span>
+                                    </div>
+                                    <p className="pr-24 mt-6 text-lg text-neutral-600">
+                                        Current laws are not good enough to
+                                        protect people&apos;s privacy on social
+                                        media. BABEL is designed to provide a
+                                        safe space to express your opinions
+                                        while protecting your identity.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="flex justify-end w-6/12">
+                                <img
+                                    src="/images/privacy.png"
+                                    alt="lock"
+                                    className="w-[540px] h-[540px]"
+                                />
+                            </div>
+                        </div>
+                    </ContentPanel>
+                </div>
                 {/* Benefits section */}
                 <div className="py-20 bg-neutral-50">
                     <ContentPanel>
