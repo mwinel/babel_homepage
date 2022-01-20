@@ -1,21 +1,21 @@
-import { useRouter } from 'next/router';
 import Layout from '../components/Layouts/Layout';
 import ContentPanel from '../components/ContentPanel/ContentPanel';
+import SectionHeadline from '../components/SectionHeadline/SectionHeadline';
 
 export default function NotFound() {
     return (
         <Layout>
             <ContentPanel>
-                <h1 className="my-10 font-extrabold tracking-tight text-center text-display-md">
+                <SectionHeadline className="text-center my-6 lg:my-10">
                     Terms of Service
-                </h1>
+                </SectionHeadline>
                 <p className="mb-6 text-md text-neutral-600">
                     Last updated: December 31, 2021
                 </p>
                 <p className="mb-6 font-bold text-label-md text-neutral-800">
                     Paragraph Title
                 </p>
-                <p className="mb-6 text-md text-neutral-800">
+                <p className="mb-6 text-sm text-neutral-800 lg:text-md">
                     Est aliquet odio at ultricies. Senectus nunc sit sed eget
                     molestie etiam ultrices. Etiam neque libero, convallis
                     consectetur id diam nullam. Nisi ullamcorper sapien, ipsum
@@ -29,7 +29,7 @@ export default function NotFound() {
                     <br />
                     Example bullet points:
                     <br />
-                    <ul className="">
+                    <ul className="list-inside">
                         <li>Point number 1</li>
                         <li>Point number 2</li>
                         <li>Point number 3</li>
@@ -59,7 +59,7 @@ export default function NotFound() {
                 <p className="mb-6 font-bold text-label-md text-neutral-800">
                     Paragraph Title
                 </p>
-                <p className="mb-6 text-md text-neutral-800">
+                <p className="mb-6 text-sm text-neutral-800 lg:text-md">
                     <span className="font-bold">Inline Subtitle.</span>
                     <br />
                     Est aliquet odio at ultricies. Senectus nunc sit sed eget
