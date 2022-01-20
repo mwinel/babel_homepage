@@ -31,7 +31,7 @@ export default function Home() {
                 <div className="flex items-center justify-center -space-x-6 lg:-space-x-8">
                     <h1
                         className={classNames(
-                            `font-extrabold tracking-tight text-transparent text-display-sm lg:text-display-lg`,
+                            `font-extrabold tracking-tight text-transparent text-display-sm md:text-display-md lg:text-display-lg`,
                             `bg-clip-text bg-gradient-to-r from-gradient to-gradient-2`
                         )}
                     >
@@ -53,40 +53,40 @@ export default function Home() {
                     </div>
                     <h1
                         className={classNames(
-                            `font-extrabold tracking-tight text-transparent text-display-sm lg:text-display-lg`,
+                            `font-extrabold tracking-tight text-transparent text-display-sm md:text-display-md lg:text-display-lg`,
                             `bg-clip-text bg-gradient-to-r from-gradient-2 to-gradient-3`
                         )}
                     >
                         First
                     </h1>
                 </div>
-                <h1 className="-mt-8 font-extrabold tracking-tight text-center text-display-sm lg:text-display-lg">
+                <h1 className="-mt-8 font-extrabold tracking-tight text-center text-display-sm md:text-display-md lg:text-display-lg">
                     Discussion Platform
                 </h1>
                 <p className="mt-2 text-md px-4 leading-6 text-center text-primary-600 lg:mt-4 lg:text-lg lg:leading-0">
                     A safe space to share your views on issues that affect your
                     life
                 </p>
-                <div className="flex flex-col space-y-4 items-center justify-center mt-6 px-4 lg:flex-row lg:space-y-0 lg:space-x-4">
+                <div className="flex flex-col space-y-4 items-center justify-center mt-6 px-4 md:flex-row md:space-y-0 md:space-x-4">
                     <Button
                         variant="primary"
                         size="md"
                         title="Register now"
-                        className="w-full lg:w-[190px]"
+                        className="w-full md:w-[190px]"
                     />
                     <Button
                         variant="secondary"
                         size="md"
                         title="Log in"
-                        className="w-full lg:w-[190px]"
+                        className="w-full md:w-[190px]"
                     />
                 </div>
             </div>
             {/* What is BABEL Section */}
             <div className="py-16 lg:py-28">
                 <ContentPanel>
-                    <div className="flex flex-col items-center justify-center lg:flex-row lg:space-x-2">
-                        <div className="flex lg:w-6/12">
+                    <div className="flex flex-col items-center justify-center md:flex-row md:space-x-2">
+                        <div className="flex md:w-6/12">
                             <Image
                                 src="/images/lock.png"
                                 alt="lock"
@@ -94,7 +94,7 @@ export default function Home() {
                                 height={540}
                             />
                         </div>
-                        <div className="flex lg:w-6/12">
+                        <div className="flex md:w-6/12">
                             <div className="flex flex-col">
                                 <SectionLabel>What is babel?</SectionLabel>
                                 <SectionHeadline>
@@ -123,8 +123,8 @@ export default function Home() {
             {/* Why BABEL Section */}
             <div className="py-16 lg:py-28">
                 <ContentPanel>
-                    <div className="flex flex-col-reverse items-center justify-center lg:flex-row lg:space-x-2">
-                        <div className="flex lg:w-6/12">
+                    <div className="flex flex-col-reverse items-center justify-center md:flex-row md:space-x-2">
+                        <div className="flex md:w-6/12">
                             <div className="flex flex-col">
                                 <SectionLabel>WHY BABEL</SectionLabel>
                                 <SectionHeadline>
@@ -146,7 +146,7 @@ export default function Home() {
                                 </SectionParagraph>
                             </div>
                         </div>
-                        <div className="flex justify-end lg:w-6/12">
+                        <div className="flex justify-end md:w-6/12">
                             <Image
                                 src="/images/privacy.png"
                                 alt="privacy"
@@ -273,7 +273,7 @@ export default function Home() {
                     />
                 </div>
             </div>
-            <div className="py-16 lg:py-28 hidden lg:block">
+            <div className="py-16 lg:py-28 hidden md:block">
                 <ContentPanel>
                     <div
                         className="bg-no-repeat bg-center bg-cover h-[520px] w-full flex flex-col pt-10"
@@ -326,8 +326,8 @@ export default function Home() {
             {/* Get in touch section */}
             <div className="py-20 lg:py-28">
                 <ContentPanel>
-                    <div className="flex flex-col-reverse w-full items-center justify-between lg:flex-row">
-                        <div className="lg:w-7/12">
+                    <div className="flex flex-col-reverse w-full items-center justify-between md:flex-row">
+                        <div className="md:w-7/12">
                             <SectionHeadline>
                                 Get in touch with us
                             </SectionHeadline>
@@ -338,7 +338,7 @@ export default function Home() {
                             </SectionParagraph>
                             <GetInTouchForm />
                         </div>
-                        <div className="flex items-center justify-center -ml-5 lg:justify-end lg:w-5/12">
+                        <div className="flex items-center justify-center -ml-5 lg:justify-end md:w-5/12">
                             <Image
                                 src="/images/contact.png"
                                 alt="contact us"
