@@ -14,21 +14,16 @@ export default function Home() {
         <Layout showNavbar={false}>
             {/* Hero Section */}
             <div
-                className="relative bg-white w-full h-[915px] bg-bottom bg-no-repeat bg-cover"
+                className="relative bg-white w-full h-[800px] lg:h-[900px] bg-bottom bg-no-repeat bg-cover"
                 style={{
-                    backgroundImage: `url("/images/group.png")`,
+                    backgroundImage: `url("/images/hero_group.png")`,
                 }}
             ></div>
-            <div
-                className="absolute inset-0 h-[856px] w-full bg-bottom bg-no-repeat bg-cover"
-                style={{
-                    backgroundImage: `url("/images/hero_masked.png")`,
-                }}
-            >
-                <div className="h-[115px] md:py-16 flex items-center justify-center">
+            <div className="absolute inset-0 flex flex-col bg-bottom bg-no-repeat bg-cover lg:h-full">
+                <div className="justify-center i-tems-center h-[100px] flex md:py-12">
                     <Logo />
                 </div>
-                <div className="flex items-center justify-center -space-x-6 lg:-space-x-8">
+                <div className="flex items-center justify-center -space-x-7 lg:-space-x-8">
                     <h1
                         className={classNames(
                             `font-extrabold tracking-tight text-transparent text-display-sm md:text-display-md lg:text-display-lg`,
@@ -63,11 +58,11 @@ export default function Home() {
                 <h1 className="-mt-8 font-extrabold tracking-tight text-center text-display-sm md:text-display-md lg:text-display-lg">
                     Discussion Platform
                 </h1>
-                <p className="mt-2 text-md px-4 leading-6 text-center text-primary-600 lg:mt-4 lg:text-lg lg:leading-0">
+                <p className="px-4 mt-2 leading-6 text-center text-md text-primary-600 lg:mt-4 lg:text-lg lg:leading-0">
                     A safe space to share your views on issues that affect your
                     life
                 </p>
-                <div className="flex flex-col space-y-4 items-center justify-center mt-6 px-4 md:flex-row md:space-y-0 md:space-x-4">
+                <div className="flex flex-col items-center justify-center px-4 mt-6 space-y-4 md:flex-row md:space-y-0 md:space-x-4">
                     <Button
                         variant="primary"
                         size="md"
@@ -81,7 +76,9 @@ export default function Home() {
                         className="w-full md:w-[190px]"
                     />
                 </div>
+                {/* </div> */}
             </div>
+
             {/* What is BABEL Section */}
             <div className="py-16 lg:py-28">
                 <ContentPanel>
@@ -158,7 +155,7 @@ export default function Home() {
                 </ContentPanel>
             </div>
             {/* Benefits Section */}
-            <div className="py-16 lg:py-28 bg-neutral-50 text-center">
+            <div className="py-16 text-center lg:py-28 bg-neutral-50">
                 <ContentPanel>
                     <SectionLabel>INCLUSION AND PRIVACY MATTERS</SectionLabel>
                     <SectionHeadline>
@@ -179,9 +176,9 @@ export default function Home() {
                         opinions are anonymous and cannot be traced back to you
                         IRL.
                     </SectionParagraph>
-                    <div className="flex flex-col space-y-20 mt-24 lg:mt-32 lg:flex-row lg:space-x-8 lg:space-y-0">
+                    <div className="flex flex-col mt-24 space-y-20 lg:mt-32 lg:flex-row lg:space-x-8 lg:space-y-0">
                         <div className="bg-neutral p-10 rounded-[8px] shadow-xl lg:w-4/12">
-                            <div className="mx-auto -mt-28 mr-8">
+                            <div className="mx-auto mr-8 -mt-28">
                                 <Image
                                     src="/images/shield_wrapper.png"
                                     width={200}
@@ -199,7 +196,7 @@ export default function Home() {
                             </p>
                         </div>
                         <div className="bg-neutral p-10 rounded-[8px] shadow-xl lg:w-4/12">
-                            <div className="mx-auto -mt-28 mr-8">
+                            <div className="mx-auto mr-8 -mt-28">
                                 <Image
                                     src="/images/discussion_wrapper.png"
                                     width={236}
@@ -217,7 +214,7 @@ export default function Home() {
                             </p>
                         </div>
                         <div className="bg-neutral p-10 rounded-[8px] shadow-xl lg:w-4/12">
-                            <div className="mx-auto -mt-28 mr-8">
+                            <div className="mx-auto mr-8 -mt-28">
                                 <Image
                                     src="/images/privacy_wrapper.png"
                                     width={200}
@@ -237,7 +234,7 @@ export default function Home() {
                 </ContentPanel>
             </div>
             {/* CTA Section */}
-            <div className="block md:hidden bg-primary-700 py-10 px-4 text-center">
+            <div className="block px-4 py-10 text-center md:hidden bg-primary-700">
                 <SectionHeadline>
                     <span
                         className={classNames(
@@ -273,7 +270,7 @@ export default function Home() {
                     />
                 </div>
             </div>
-            <div className="py-16 lg:py-28 hidden md:block">
+            <div className="hidden py-16 lg:py-28 md:block">
                 <ContentPanel>
                     <div
                         className="bg-no-repeat bg-center bg-cover h-[520px] w-full flex flex-col pt-10"
@@ -326,7 +323,7 @@ export default function Home() {
             {/* Get in touch section */}
             <div className="py-20 lg:py-28">
                 <ContentPanel>
-                    <div className="flex flex-col-reverse w-full items-center justify-between md:flex-row">
+                    <div className="flex flex-col-reverse items-center justify-between w-full md:flex-row">
                         <div className="md:w-7/12">
                             <SectionHeadline>
                                 Get in touch with us

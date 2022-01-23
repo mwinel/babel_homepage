@@ -3,8 +3,8 @@ import Button from '../Button/Button';
 
 export default function MobileMenu() {
     return (
-        <Disclosure.Panel className="bg-gray-50 md:hidden">
-            <div className="border-b border-neutral-200 p-4">
+        <Disclosure.Panel className="bg-neutral md:hidden">
+            <div className="p-4 border-b border-neutral-200">
                 <div className="flex flex-col space-y-4">
                     <Button
                         variant="secondary"

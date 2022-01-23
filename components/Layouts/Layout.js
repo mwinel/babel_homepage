@@ -3,12 +3,12 @@ import Footer from '../Footer/Footer';
 
 export default function Layout({
     children,
-    showNavbar = true,
+    showNavbar,
     showFooter = true,
 }) {
     return (
         <div>
-            {showNavbar && <Nav />}
+            <Nav showNavbar={showNavbar} />
             <main>{children}</main>
             {showFooter && <Footer />}
         </div>

@@ -8,8 +8,8 @@ export default function NotFound() {
     const router = useRouter();
 
     return (
-        <Layout>
-            <div className="bg-neutral-50 h-full py-20 flex flex-col items-center lg:flex-row lg:py-28">
+        <Layout showNavbar={true}>
+            <div className="flex flex-col items-center h-full py-20 bg-neutral-50 lg:flex-row lg:py-28">
                 <ContentPanel>
                     <div className="flex-col justify-center mx-auto">
                         <Image
@@ -18,7 +18,7 @@ export default function NotFound() {
                             width={661}
                             height={277}
                         />
-                        <p className="my-10 font-extrabold text-center tracking-tight text-display-sm">
+                        <p className="my-10 font-extrabold tracking-tight text-center text-display-sm">
                             Oh, no! This page does not exist.
                         </p>
                         <div className="flex justify-center">

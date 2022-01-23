@@ -4,9 +4,9 @@ import SectionHeadline from '../components/SectionHeadline/SectionHeadline';
 
 export default function NotFound() {
     return (
-        <Layout>
+        <Layout showNavbar={true}>
             <ContentPanel>
-                <SectionHeadline className="text-center my-6 lg:my-10">
+                <SectionHeadline className="my-6 text-center lg:my-10">
                     Terms of Service
                 </SectionHeadline>
                 <p className="mb-6 text-md text-neutral-600">
