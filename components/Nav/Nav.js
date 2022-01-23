@@ -52,13 +52,13 @@ export default function Nav({ showNavbar }) {
                                                     variant="secondary"
                                                     size="sm"
                                                     title="Log in"
-                                                    className="px-12"
+                                                    className="md:w-[160px]"
                                                 />
                                                 <Button
                                                     variant="primary"
                                                     size="sm"
                                                     title="Register"
-                                                    className="px-12"
+                                                    className="md:w-[160px]"
                                                 />
                                             </div>
                                         </div>
@@ -87,13 +87,13 @@ export default function Nav({ showNavbar }) {
                                             variant="secondary"
                                             size="md"
                                             title="Log in"
-                                            className="px-12"
+                                            className="md:w-[160px]"
                                         />
                                         <Button
                                             variant="primary"
                                             size="md"
                                             title="Register"
-                                            className="px-12"
+                                            className="md:w-[160px]"
                                         />
                                     </div>
                                 </div>
