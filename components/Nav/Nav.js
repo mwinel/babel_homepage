@@ -27,7 +27,7 @@ export default function Nav({ showNavbar }) {
         <>
             <Disclosure as="sticky-nav">
                 {({ open }) => (
-                    <div class="sticky z-10 top-0 shadow-sm bg-neutral">
+                    <div className="sticky top-0 z-10 shadow-sm bg-neutral">
                         {visible && (
                             <Transition
                                 show={visible}
